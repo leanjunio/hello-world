@@ -16,6 +16,8 @@ on:
   push:
     paths:
       - 'frontend/**'
+    branches:
+      - master
 
 env:
   AZURE_WEBAPP_NAME: node-tt5tbhbv7vkpq    # set this to your application's name
