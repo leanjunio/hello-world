@@ -8,6 +8,11 @@ on:
     branches:
       - master
 
+defaults:
+  run:
+    shell: bash
+    working-directory: api
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
