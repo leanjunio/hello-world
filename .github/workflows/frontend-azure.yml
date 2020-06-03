@@ -45,7 +45,9 @@ jobs:
         npm run build --if-present
         npm run test --if-present
     - name: show files
-      run: ls -l
+      run: |
+        cd build
+        ls -l
     # - name: 'Deploy to Azure WebApp'
     #   uses: azure/webapps-deploy@v2
     #   with:
